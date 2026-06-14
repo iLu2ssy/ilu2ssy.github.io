@@ -1,2 +1,227 @@
-<h1>werjkwkjrel Sitesi Açıldı!</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>werjkwkjrel | Profile</title>
+    <!-- FontAwesome İkonları için CDN -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background: radial-gradient(circle at center, #2e1065, #11071c, #000000);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Arka plan hareketli ışık efektleri */
+        .bg-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #a855f7;
+            filter: blur(150px);
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.4;
+            animation: float 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translate(-30px, -30px); }
+            100% { transform: translate(30px, 30px); }
+        }
+
+        /* Profil Kartı (Cam Efekti) */
+        .profile-container {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px rgba(255, 255, 255, 0.08) solid;
+            border-radius: 24px;
+            padding: 35px 25px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Profil Fotoğrafı */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #a855f7;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+        }
+
+        /* Kullanıcı Adı */
+        .username {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            background: linear-gradient(45deg, #fff, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Durum / Kısa Açıklama */
+        .tagline {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        /* Sosyal Medya Küçük İkonları */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            color: #cbd5e1;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .social-icons a:hover {
+            color: #c084fc;
+            transform: translateY(-3px);
+        }
+
+        /* Büyük Link Butonları */
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 14px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .link-btn i {
+            font-size: 18px;
+            width: 25px;
+            text-align: left;
+        }
+
+        .link-btn .arrow {
+            font-size: 12px;
+            opacity: 0.5;
+            transition: transform 0.2s ease;
+        }
+
+        /* Buton Hover Efektleri */
+        .link-btn:hover {
+            background: rgba(168, 85, 247, 0.15);
+            border-color: rgba(168, 85, 247, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(168, 85, 247, 0.1);
+        }
+
+        .link-btn:hover .arrow {
+            transform: translateX(3px);
+            opacity: 1;
+            color: #c084fc;
+        }
+
+        /* Alt Bilgi */
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            color: #64748b;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Arka plan parlaması -->
+    <div class="bg-glow"></div>
+
+    <!-- Profil Kartı -->
+    <div class="profile-container">
+        
+        <!-- Profil Resmi (İstediğiniz linkle değiştirebilirsiniz) -->
+        <img src="https://unsplash.com" alt="Avatar" class="avatar">
+        
+        <!-- İsim ve Tagline -->
+        <div class="username">werjkwkjrel</div>
+        <div class="tagline">discord: @werjkwkjrel | .gg/community</div>
+
+        <!-- Üst Sosyal İkonlar -->
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="mailto:ornek@mail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <!-- Büyük Bağlantı Butonları -->
+        <div class="links-group">
+            
+            <a href="https://discord.gg" target="_blank" class="link-btn">
+                <span><i class="fa-brands fa-discord" style="color: #5865F2;"></i> Discord Sunucum</span>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="https://youtube.com" target="_blank" class="link-btn">
+                <span><i class="fa-brands fa-youtube" style="color: #FF0000;"></i> YouTube Kanalım</span>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="https://steamcommunity.com" target="_blank" class="link-btn">
+                <span><i class="fa-brands fa-steam" style="color: #00adee;"></i> Steam Profilim</span>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="#" class="link-btn">
+                <span><i class="fa-solid fa-gamepad" style="color: #10B981;"></i> Oynadığım Oyunlar</span>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+        </div>
+
+        <!-- Alt yazı -->
+        <div class="footer">WERJKWKJREL © 2026</div>
+
+    </div>
+
+</body>
+</html>
